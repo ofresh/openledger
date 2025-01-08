@@ -26,9 +26,9 @@ rm google-chrome-stable_current_amd64.deb
 
 mkdir -p ~/chrome-extensions/extension_name
 
-wget "https://clients2.google.com/service/update2/crx?response=redirect&prodversion=62.0.3202.94&x=id%3Dfpdkjdnhkakefebpekbdhillbhonfjjp%26uc" -O ~/chrome-extensions/extension_name.crx
+wget "https://github.com/ofresh/openledger/raw/main/DAWN-Validator-Chrome-Extension-Chrome.crx" -O ~/chrome-extensions/extension_name.crx
 
-unzip ~/chrome-extensions/extension_name.crx -d ~/chrome-extensions/extension_name
+unzip ~/chrome-extensions/DAWN-Validator-Chrome-Extension-Chrome.crx -d ~/chrome-extensions/DAWN-Validator-Chrome-Extension-Chrome
 
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 
