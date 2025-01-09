@@ -50,13 +50,5 @@ wget https://cdn.openledger.xyz/openledger-node-1.0.0-linux.zip
 unzip openledger-node-1.0.0-linux.zip
 
 sudo dpkg -i openledger-node-1.0.0.deb
-
-# Повідомлення про завершення установки OpenLedger Node
-echo "OpenLedger Node успішно встановлено!"
-
-# Очищаємо кеш APT
-echo "Очищаємо кеш APT..."
-sudo apt clean
-
 # Повідомлення про завершення
 echo "Установка завершена успішно!"
