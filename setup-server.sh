@@ -24,12 +24,6 @@ sudo apt install -f -y
 
 rm google-chrome-stable_current_amd64.deb
 
-mkdir -p ~/chrome-extensions/extension_name
-
-wget "https://github.com/ofresh/openledger/raw/main/DAWN-Validator-Chrome-Extension-Chrome.crx" -O ~/chrome-extensions/extension_name.crx
-
-unzip ~/chrome-extensions/DAWN-Validator-Chrome-Extension-Chrome.crx -d ~/chrome-extensions/DAWN-Validator-Chrome-Extension-Chrome
-
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
