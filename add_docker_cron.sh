@@ -14,7 +14,7 @@ if [ -z "$DOCKER_PATH" ]; then
 fi
 
 # Формуємо cron-завдання
-CRON_JOB="*/30 * * * * $DOCKER_PATH restart $CONTAINER_1 $CONTAINER_2"
+CRON_JOB="*/30 * * * * sudo $DOCKER_PATH restart $CONTAINER_1 $CONTAINER_2"
 
 # Додаємо завдання в crontab
 (crontab -l 2>/dev/null; echo "$CRON_JOB") | crontab -
